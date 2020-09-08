@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Thin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Black";
+    src: url("../fonts/Montserrat-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+$main-color: black;
+
+%di {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-image: url("../img/bg.png");
+    background-repeat: no-repeat;
+    max-width: 1995px;
+}
+
+.sidebar {
+    // float: left;
+    background: white;
+    float: left;
+    height: 1210px;
+    width: 120px;
+
+    &__text {
+        transform: rotate(270deg);
+
+        // margin-top: 400px;
+        margin-top: 450%;
+        margin-left: -150px;
+        width: 433px;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        color: #b3b3b3;
+        letter-spacing: 1px;
+    }
+
+    &__text-strong {
+        color: #000000;
+    }
+
+    &__img {
+        position: relative;
+        top: 580px;
+        left: 40px;
+    }
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 110px;
+
+    &__text {
+        font-family: "Montserrat-Black";
+        font-size: 40px;
+    }
+}
+
+.main-header {}
+
+//
+.nav-menu {
+    @extend %di;
+}
+
+//
+.main-menu {
+    float: right;
+    margin-top: 112px;
+    margin-right: 36px;
+
+    //
+    &__el {
+        @extend %di;
+
+        font-family: Montserrat;
+        font-size: 22px;
+        margin-right: 34px;
+        padding: 10px 18px 14px 20px;
+    }
+
+    &__el:hover {
+        background-color: $main-color;
+        border-radius: 20px;
+    }
+
+    &__el-text:hover {
+        color: #ffffff;
+    }
+}
+
+.main-btn {
+    margin-top: 836px;
+    text-align: center;
+
+    &__btn {
+        padding: 22px 64px;
+        color: #f0cdac;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: 0.8px;
+        background-color: #000000;
+        border-radius: 30px;
+        box-shadow: 10px 60px 50px 8px rgba(0, 0, 0, 0.5);
+        margin-bottom: 183px;
+    }
+}
+
+.wrap {
+    max-width: 1993px;
+    margin: auto;
+}
